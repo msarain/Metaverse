@@ -13,11 +13,11 @@ stringToNumber = (input) => input.length; // Ok
 // refer to a function type.
 type NumberToString = (input: number) => string;
 
-function usesNumberToString(numberToString: NumberToString) {
+function usesNumberToString2(numberToString: NumberToString) {
     console.log(`The string is: ${numberToString(1234)}`);
 }
 
-usesNumberToString((input) => `${input}! Hooray!`); // Ok
+usesNumberToString2((input) => `${input}! Hooray!`); // Ok
 
 //usesNumberToString((input) => input * 2);
 // Error: Type 'number' is not assignable to type 'string'.
